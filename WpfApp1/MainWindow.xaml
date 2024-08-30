@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button
+            x:Name="MyButton1"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            >My button
+        </Button>
+        <Button
+            x:Name="MyButton2"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            FontWeight="Bold"
+            Content="MyButton2"
+            />
+        <Button
+            x:Name="MyButton3"
+            >            
+            <Button.Content>
+                my button 3
+            </Button.Content>
+            <Button.VerticalAlignment>
+                Center
+            </Button.VerticalAlignment>
+            <Button.HorizontalAlignment>
+                Left
+            </Button.HorizontalAlignment>
+          </Button>
+        <Button
+            x:Name="MyButton4"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            >
+            <WrapPanel>
+                <TextBlock Foreground="Blue">
+                Multi
+                </TextBlock>
+                <TextBlock Foreground="Red">
+                Color
+                </TextBlock>
+                <TextBlock>
+                Text
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+        <TextBlock 
+            x:Name="myTextBlock"
+            FontSize="72"
+                   Foreground="ForestGreen"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center">            
+            Hello World!
+        </TextBlock>
+    </Grid>
+</Window>
